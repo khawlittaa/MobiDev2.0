@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VbK-b1-ufp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="kUQ-3Y-8iu">
+            <objects>
+                <navigationController id="VbK-b1-ufp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="TA7-pa-uKn">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.99269196540000004" green="0.6545368318" blue="0.1699088647" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZtM-bI-VZ2" kind="relationship" relationship="rootViewController" id="aGo-D0-rk3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xwE-sQ-rsz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1500" y="-179"/>
+        </scene>
+        <!--View1VC-->
+        <scene sceneID="U0J-xU-m9n">
+            <objects>
+                <viewController id="ZtM-bI-VZ2" customClass="View1VC" customModule="MobDevApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n5d-JF-qTu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-home-filled-30" translatesAutoresizingMaskIntoConstraints="NO" id="STB-cT-87y">
+                                <rect key="frame" x="143" y="153" width="84" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="O2u-Mp-JQA"/>
+                                    <constraint firstAttribute="height" constant="78" id="S5F-JZ-m7W"/>
+                                    <constraint firstAttribute="width" constant="84" id="lYY-pz-bpt"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeU-fS-fpS">
+                                <rect key="frame" x="60" y="387" width="255" height="35"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="Analyser Menu">
+                                    <color key="titleColor" red="0.1019607843" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="menuAction:" destination="ZtM-bI-VZ2" eventType="touchUpInside" id="r1u-pF-5y5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HxZ-ov-65J">
+                                <rect key="frame" x="60" y="527" width="255" height="35"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="Aide Médical">
+                                    <color key="titleColor" red="0.1019607843" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="medicalAction:" destination="ZtM-bI-VZ2" eventType="touchUpInside" id="G7L-1j-QaL"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-hospital-3-filled-50" translatesAutoresizingMaskIntoConstraints="NO" id="IjX-m4-Kir">
+                                <rect key="frame" x="150" y="444" width="72" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="9Ue-sk-F9T"/>
+                                    <constraint firstAttribute="width" constant="72" id="XUX-mL-BKZ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGv-nL-JKb">
+                                <rect key="frame" x="60" y="246" width="255" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Restaurant Proche">
+                                    <color key="titleColor" red="0.1019607843" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="restauAction:" destination="ZtM-bI-VZ2" eventType="touchUpInside" id="5V4-Ja-q4J"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icons8-restaurant-menu-filled-50" translatesAutoresizingMaskIntoConstraints="NO" id="pT4-Sm-J3H">
+                                <rect key="frame" x="151" y="299" width="72" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="4WZ-8w-vLf"/>
+                                    <constraint firstAttribute="width" constant="55" id="qDg-Ic-fg1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pT4-Sm-J3H" firstAttribute="centerX" secondItem="n5d-JF-qTu" secondAttribute="centerX" id="BW6-BV-BaL"/>
+                            <constraint firstItem="wGv-nL-JKb" firstAttribute="top" secondItem="STB-cT-87y" secondAttribute="bottom" constant="15" id="Doo-5n-u2k"/>
+                            <constraint firstItem="wGv-nL-JKb" firstAttribute="leading" secondItem="2to-fh-FjM" secondAttribute="leading" constant="60" id="HfA-x9-kaO"/>
+                            <constraint firstItem="IjX-m4-Kir" firstAttribute="centerX" secondItem="n5d-JF-qTu" secondAttribute="centerX" constant="-1.5" id="OXR-BO-ZgC"/>
+                            <constraint firstItem="HxZ-ov-65J" firstAttribute="leading" secondItem="2to-fh-FjM" secondAttribute="leading" constant="60" id="Ord-4k-yWe"/>
+                            <constraint firstItem="IjX-m4-Kir" firstAttribute="top" secondItem="YeU-fS-fpS" secondAttribute="bottom" constant="22" id="RP7-KI-iUt"/>
+                            <constraint firstItem="YeU-fS-fpS" firstAttribute="top" secondItem="pT4-Sm-J3H" secondAttribute="bottom" constant="15" id="Req-1l-DTj"/>
+                            <constraint firstItem="STB-cT-87y" firstAttribute="centerX" secondItem="n5d-JF-qTu" secondAttribute="centerX" constant="-2" id="RmI-b7-jLg"/>
+                            <constraint firstItem="pT4-Sm-J3H" firstAttribute="top" secondItem="wGv-nL-JKb" secondAttribute="bottom" constant="35" id="TRq-LE-vVP"/>
+                            <constraint firstItem="2to-fh-FjM" firstAttribute="trailing" secondItem="YeU-fS-fpS" secondAttribute="trailing" constant="60" id="Tag-x8-fdK"/>
+                            <constraint firstItem="wGv-nL-JKb" firstAttribute="centerX" secondItem="n5d-JF-qTu" secondAttribute="centerX" id="TjG-tf-hva"/>
+                            <constraint firstItem="HxZ-ov-65J" firstAttribute="top" secondItem="IjX-m4-Kir" secondAttribute="bottom" constant="13" id="Tnu-1N-eh4"/>
+                            <constraint firstItem="STB-cT-87y" firstAttribute="top" secondItem="2to-fh-FjM" secondAttribute="top" constant="89" id="ZCF-aS-MWR"/>
+                            <constraint firstItem="HxZ-ov-65J" firstAttribute="centerX" secondItem="n5d-JF-qTu" secondAttribute="centerX" constant="6.5" id="ZkE-PR-Hgx"/>
+                            <constraint firstItem="YeU-fS-fpS" firstAttribute="leading" secondItem="2to-fh-FjM" secondAttribute="leading" constant="60" id="fUn-3a-kkr"/>
+                            <constraint firstItem="2to-fh-FjM" firstAttribute="trailing" secondItem="HxZ-ov-65J" secondAttribute="trailing" constant="60" id="fdg-Py-8G7"/>
+                            <constraint firstItem="YeU-fS-fpS" firstAttribute="centerX" secondItem="n5d-JF-qTu" secondAttribute="centerX" constant="5.5" id="oo4-78-9n4"/>
+                            <constraint firstItem="2to-fh-FjM" firstAttribute="trailing" secondItem="wGv-nL-JKb" secondAttribute="trailing" constant="60" id="yTY-Nc-5sK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2to-fh-FjM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6oR-Ni-nWv"/>
+                    <connections>
+                        <outlet property="btnMedical" destination="HxZ-ov-65J" id="cZd-oV-2TO"/>
+                        <outlet property="btnMenu" destination="YeU-fS-fpS" id="sIG-dq-v0R"/>
+                        <outlet property="btnResto" destination="wGv-nL-JKb" id="LeX-pK-GuM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UUa-eo-1U1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-759.20000000000005" y="-179.46026986506749"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="m6S-Wm-ZD8">
+            <objects>
+                <viewController storyboardIdentifier="hospitalID" id="l30-bq-Syf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NsW-CQ-UGO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ÉTABLISEMENT MÉDICAL PRÈS DE VOUS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmG-FM-s4r">
+                                <rect key="frame" x="15" y="70" width="344" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvl-xk-pVq">
+                                <rect key="frame" x="12" y="110" width="355" height="345"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hospital" translatesAutoresizingMaskIntoConstraints="NO" id="UAB-QL-GmO">
+                                        <rect key="frame" x="9" y="13" width="334" height="251"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="251" id="QPx-3V-BBO"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="address" translatesAutoresizingMaskIntoConstraints="NO" id="3M3-4q-bpA">
+                                        <rect key="frame" x="15" y="310" width="26" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="26" id="TSa-VJ-CaD"/>
+                                            <constraint firstAttribute="height" constant="24" id="UuX-0s-5PP"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hôpital Fattouma Bourguiba" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fr5-VQ-i0s">
+                                        <rect key="frame" x="60" y="281" width="213.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avenue Farhat HACHED.Monastir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pri-o1-uR5">
+                                        <rect key="frame" x="60" y="312.5" width="252.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-hospital-3-filled-50" translatesAutoresizingMaskIntoConstraints="NO" id="MuS-2l-pnj">
+                                        <rect key="frame" x="15" y="278" width="26" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="KpE-I0-DGk"/>
+                                            <constraint firstAttribute="width" constant="26" id="yaB-pB-bbZ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="pri-o1-uR5" firstAttribute="top" secondItem="Fr5-VQ-i0s" secondAttribute="bottom" constant="11" id="2Gm-6G-bzX"/>
+                                    <constraint firstItem="Fr5-VQ-i0s" firstAttribute="top" secondItem="UAB-QL-GmO" secondAttribute="bottom" constant="17" id="5fM-Ul-n7a"/>
+                                    <constraint firstItem="MuS-2l-pnj" firstAttribute="leading" secondItem="hvl-xk-pVq" secondAttribute="leading" constant="15" id="7HD-Oj-pV0"/>
+                                    <constraint firstItem="3M3-4q-bpA" firstAttribute="leading" secondItem="hvl-xk-pVq" secondAttribute="leading" constant="15" id="9JZ-nh-ibH"/>
+                                    <constraint firstItem="UAB-QL-GmO" firstAttribute="top" secondItem="hvl-xk-pVq" secondAttribute="top" constant="13" id="IUl-5a-wrI"/>
+                                    <constraint firstItem="3M3-4q-bpA" firstAttribute="top" secondItem="MuS-2l-pnj" secondAttribute="bottom" constant="8" id="azI-Gq-SD0"/>
+                                    <constraint firstItem="UAB-QL-GmO" firstAttribute="leading" secondItem="hvl-xk-pVq" secondAttribute="leading" constant="9" id="br9-yE-YTM"/>
+                                    <constraint firstAttribute="trailing" secondItem="UAB-QL-GmO" secondAttribute="trailing" constant="12" id="feS-lc-xVs"/>
+                                    <constraint firstItem="Fr5-VQ-i0s" firstAttribute="leading" secondItem="MuS-2l-pnj" secondAttribute="trailing" constant="19" id="pcl-GP-KcT"/>
+                                    <constraint firstAttribute="height" constant="345" id="teE-CB-jAa"/>
+                                    <constraint firstItem="MuS-2l-pnj" firstAttribute="top" secondItem="UAB-QL-GmO" secondAttribute="bottom" constant="14" id="v7O-dJ-ETk"/>
+                                    <constraint firstItem="pri-o1-uR5" firstAttribute="leading" secondItem="3M3-4q-bpA" secondAttribute="trailing" constant="19" id="yoB-1i-d7u"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hvl-xk-pVq" firstAttribute="leading" secondItem="bdW-7Y-f7n" secondAttribute="leading" constant="12" id="K6Y-2n-qe9"/>
+                            <constraint firstItem="cmG-FM-s4r" firstAttribute="centerX" secondItem="NsW-CQ-UGO" secondAttribute="centerX" constant="-0.5" id="Qky-2D-hGd"/>
+                            <constraint firstItem="cmG-FM-s4r" firstAttribute="top" secondItem="bdW-7Y-f7n" secondAttribute="top" constant="50" id="gQb-ka-bpv"/>
+                            <constraint firstItem="hvl-xk-pVq" firstAttribute="centerX" secondItem="NsW-CQ-UGO" secondAttribute="centerX" constant="2" id="gng-NI-QA8"/>
+                            <constraint firstItem="bdW-7Y-f7n" firstAttribute="trailing" secondItem="hvl-xk-pVq" secondAttribute="trailing" constant="8" id="mv4-d8-VyU"/>
+                            <constraint firstItem="hvl-xk-pVq" firstAttribute="top" secondItem="cmG-FM-s4r" secondAttribute="bottom" constant="19" id="xZ4-nX-nzZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bdW-7Y-f7n"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YY6-1Z-QIR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10" y="-179"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="address" width="156.52174377441406" height="156.52174377441406"/>
+        <image name="hospital" width="512" height="354"/>
+        <image name="icons8-home-filled-30" width="154.28572082519531" height="154.28572082519531"/>
+        <image name="icons8-hospital-3-filled-50" width="156.52174377441406" height="156.52174377441406"/>
+        <image name="icons8-restaurant-menu-filled-50" width="156.52174377441406" height="156.52174377441406"/>
+    </resources>
+</document>
